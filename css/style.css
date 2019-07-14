@@ -207,6 +207,8 @@ header.major p {
 
 /* Form */
 
+/*
+
 form {
 	margin: 0 0 2em 0;
 }
@@ -401,6 +403,7 @@ input[type="radio"] + label:before {
 	color: #858585 !important;
 	opacity: 1.0;
 }
+ */
 
 /* Box */
 
@@ -424,6 +427,8 @@ input[type="radio"] + label:before {
 }
 
 /* Icon */
+
+/*
 
 .icon {
 	text-decoration: none;
@@ -527,6 +532,7 @@ input[type="radio"] + label:before {
 .icon.rounded.fa-rss {
 	background-color: #f2600b;
 }
+*/
 
 /* Image */
 
@@ -573,6 +579,8 @@ input[type="radio"] + label:before {
 }
 
 /* List */
+
+/*
 
 ol {
 	list-style: decimal;
@@ -707,8 +715,11 @@ ul.actions.fit.small li {
 dl {
 	margin: 0 0 2em 0;
 }
+*/
 
 /* Table */
+
+/*
 
 .table-wrapper {
 	-webkit-overflow-scrolling: touch;
@@ -776,6 +787,8 @@ table.alt thead {
 table.alt tfoot {
 	border-top: 0;
 }
+
+*/
 
 /* Button */
 
@@ -858,7 +871,7 @@ input[type="submit"].big,
 input[type="reset"].big,
 input[type="button"].big,
 .button.big {
-	font-size: 1.35em;
+	font-size: 1.5em;
 }
 
 input[type="submit"].alt,
@@ -926,6 +939,28 @@ input[type="button"]:disabled,
 	cursor: default;
 	opacity: 0.25;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Header */
 
@@ -1297,6 +1332,7 @@ body.landing #header nav a {
 .active,
 .demo:hover {
   opacity: 1;
+
 }
 
 /* Grid Demo */
