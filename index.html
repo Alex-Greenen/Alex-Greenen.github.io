@@ -51,43 +51,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 			} // End if
 		});
 	});
-	</script>
 
-	<script>
-	var slideIndex = 1;
-	showSlides(slideIndex);
-
-	// Next/previous controls
-	function plusSlides(n) {
-		showSlides(slideIndex += n);
-	}
-
-	// Thumbnail image controls
-	function currentSlide(n) {
-		showSlides(slideIndex = n);
-	}
-
-	function showSlides(n) {
-		var i;
-		var slides = document.getElementsByClassName("mySlides");
-		var dots = document.getElementsByClassName("demo");
-		var captionText = document.getElementById("caption");
-		if (n > slides.length) {slideIndex = 1}
-		if (n < 1) {slideIndex = slides.length}
-		for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
-		}
-		for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
-		}
-		slides[slideIndex-1].style.display = "block";
-		dots[slideIndex-1].className += " active";
-		captionText.innerHTML = dots[slideIndex-1].alt;
-	}
-
-	</script>
-
-	<script>
 	function openCity(evt, cityName) {
 		// Declare all variables
 		var i, tabcontent, tablinks;
@@ -108,11 +72,12 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 		document.getElementById(cityName).style.display = "block";
 		evt.currentTarget.className += " active";
 	}
-</script>
+
+	</script>
 
 
 </head>
-<body class="landing" onLoad="openCity(event, 'PerlinNoise')">
+<body class="landing">
 
 	<!-- Header -->
 	<header id="header">
@@ -134,7 +99,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 		<h2>Hi. I'm Alex.</h2>
 		<p>I'm a final yeah student from the University of Durham (UK) Department of mathematics</p>
 
-		<a class="button big" href="AlexGreenensCVJanuary2019.pdf" download target="_blank">Download CV</a>
+		<a class="button big" href=" PSSAlexGreenensCVJanuary2019.pdf" download target="_blank">Download CV</a>
 	</section>
 
 	<!-- About -->
@@ -301,40 +266,40 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 		<div class="container">
 
 
-
-
 			<!-- Tab links -->
 			<div class="tab">
 
-				<button class="tablinks" onclick="openCity(event, 'PerlinNoise')">
+				<button id = "PerlinNoiseTab" class="tablinks" onclick="openCity(event, 'PerlinNoise')">
 					<img class ="imgcliped" src="images/project/perlinB.png">
 					<div class="describe">Perlin Noise</div>
 				</button>
 
-				<button class="tablinks" onclick="openCity(event, 'SolarFluxTubes')">
+				<button id = "SolarFluxTubesTab" class="tablinks" onclick="openCity(event, 'SolarFluxTubes')">
 					<img class ="demo imgcliped" src="images/project/TubesB.png" >
 					<div class="describe">Solar Flux Tubes</div>
 				</button>
 
-				<button class="tablinks" onclick="openCity(event, 'Holography')">
-					<img class ="demo imgcliped" src="images/project/HoloC.png" alt="Holography">
+				<button id = "HolographyTab" class="tablinks" onclick="openCity(event, 'Holography')">
+					<img class ="demo imgcliped" src="images/project/HoloC.png">
 					<div class="describe">Holography</div>
 				</button>
 
-				<button class="tablinks" onclick="openCity(event, '3DPrinting')">3D Printing</button>
-
-				<button class="tablinks" onclick="openCity(event, 'ClothSimulation')">Cloth Simulation</button>
-
-				<button class="tablinks" onclick="openCity(event, 'IOSApp')">
-					<img class ="demo imgcliped" src="images/project/DCCC.png" alt="IOS App">
-					<div class="describe">IOS App</div>
-
+				<button id = "3DPrintingTab" class="tablinks" onclick="openCity(event, '3DPrinting')">
+					<img class ="demo imgcliped" src="images/project/HoloC.png">
+					<div class="describe">3D Printing</div>
 				</button>
-			</div>
 
-			<!--Next and previous buttons-->
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<button id = "ClothSimulationTab" class="tablinks" onclick="openCity(event, 'ClothSimulation')">
+					<img class ="demo imgcliped" src="images/project/HoloC.png">
+					<div class="describe">Cloth Simulation</div>
+				</button>
+
+				<button id = "IOSAppTab" class="tablinks" onclick="openCity(event, 'IOSApp')">
+					<img class ="demo imgcliped" src="images/project/DCCC.png">
+					<div class="describe">IOS App</div>
+				</button>
+
+			</div>
 
 			<!-- Tab content -->
 			<div id="PerlinNoise" class="tabcontent">
@@ -347,76 +312,91 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 					</div>
 					<div class="item2">
 						<video id="perlinVid" src="images/project/PerlinC.mp4" style="width:67%" type="video/mp4" autoplay loop>
+						</div>
 					</div>
-					<!--
-					<div class="item2" style="background-color: #222; position: relative; color: white; border-radius: 2em; height: 2em; padding-top: 7px">
-						<p style="font-size:1em"> Perlin Noise </p>
+				</div>
+
+				<div id="SolarFluxTubes" class="tabcontent">
+					<div class="grid-container">
+						<div class="item1">
+							<img src="images/project/TubesA.pdf" style="width:100%">
+						</div>
+						<div >
+							<p class="centerText"> Over summer 2018, I research the analylitical form of force-free magnetic flux tubes on the solar corona. This project was funded by the Royale Astronomical Society (RAS) and St Chads College</p>
+						</div>
+						<div>
+							<img class="centerText" src="images/project/TubesB.png" style="width:100%">
+						</div>
 					</div>
+				</div>
+
+				<div id="Holography" class="tabcontent">
+					<div class="grid-container">
+						<div class="grid-item item1">
+							<img src="images/project/HoloA.pdf" style="width:100%">
+						</div>
+						<div class="grid-item" >
+							<p class="centerText"> Over summer 2019, I researched the bridge between Andi de-Sitter space and Conformal Field Theories using holograpy. And notably looked into the the recovery rates of different tilings of AdS-space using perfect tensors (like HaPPY Code)</p>
+						</div>
+						<div class="grid-item">
+							<img class="centerText" src="images/project/HoloB.png" style="width:100%">
+						</div>
+					</div>
+				</div>
+
+				<div id="3DPrinting" class="tabcontent">
+					<div class="grid-container">
+						<div>
+							<img src="images/project/TubesB.png" style="width:100%">
+						</div>
+						<div >
+							<p class="centerText"> In 2017, I took part of a 3D printing workshop with the Durham Maths department. I worked more on the subject and printed some interesting figures.</p>
+						</div>
+						<div>
+							<img src="images/project/TubesB.png" style="width:100%">
+						</div>
+						<div>
+							<img src="images/project/TubesB.png" style="width:100%">
+						</div>
+					</div>
+				</div>
+
+				<div id="ClothSimulation" class="tabcontent">
+					<div class="grid-container">
+						<div>
+							<img src="images/project/TubesB.png" style="width:100%">
+						</div>
+						<div >
+							<p class="centerText"> During 2018, I programmed a cloth simulation accounting for elasticity, gravity and self-interaction.</p>
+						</div>
+						<div>
+							<img src="images/project/TubesB.png" style="width:100%">
+						</div>
+						<div>
+							<img src="images/project/TubesB.png" style="width:100%">
+						</div>
+					</div>
+				</div>
+
+				<div id="IOSApp" class="tabcontent">
+					<div class="grid-container">
+						<div class="item1">
+							<img src="images/project/DCCA.mp4" style="width:60%">
+						</div>
+						<div>
+							<p class="centerText"> This cloud-based IOS app was created in 24 hours during the 2018 Duhram Hackathon. It is a posting app for local services which comes with login security, posting creation and viewing and live messaging. Focuses on easy and quick use with both the youth and the eldrly as a target audience.</p>
+						</div>
+						<div>
+							<img class="center" src="images/project/DCCB.png" style="width:80%">
+						</div>
+					</div>
+				</div>
+
+
+				<!--Next and previous buttons
+				<a class="prev" onclick="changeCity(-1)">&#10094;</a>
+				<a class="next" onclick="changeCity(+1)">&#10095;</a>
 				-->
-				</div>
-			</div>
-
-			<div id="SolarFluxTubes" class="tabcontent">
-				<div class="grid-container">
-					<div class="item1">
-						<img src="images/project/TubesA.pdf" style="width:100%">
-					</div>
-					<div >
-						<p class="centerText"> Over summer 2018, I research the analylitical form of force-free magnetic flux tubes on the solar corona. This project was funded by the Royale Astronomical Society (RAS) and St Chads College</p>
-					</div>
-					<div>
-						<img class="centerText" src="images/project/TubesB.png" style="width:100%">
-					</div>
-				</div>
-			</div>
-
-			<div id="Holography" class="tabcontent">
-				<div class="grid-container">
-					<div class="grid-item item1">
-						<img src="images/project/HoloA.pdf" style="width:100%">
-					</div>
-					<div class="grid-item" >
-						<p class="centerText"> Over summer 2019, I researched the bridge between Andi de-Sitter space and Conformal Field Theories using holograpy. And notably looked into the the recovery rates of different tilings of AdS-space using perfect tensors (like HaPPY Code)</p>
-					</div>
-					<div class="grid-item">
-						<img class="centerText" src="images/project/HoloB.png" style="width:100%">
-					</div>
-				</div>
-			</div>
-
-			<div id="3DPrinting" class="tabcontent">
-				<div class="grid-container">
-					<div class="item1">
-						<img src="images/project/TubesA.pdf" style="width:100%">
-					</div>
-					<div >
-						<p class="centerText"> In 2017, I took part of a 3D printing workshop with the Durham Maths department. I worked more on the subject and printed some interesting figures.</p>
-					</div>
-					<div>
-						<img class="centerText" src="images/project/TubesB.png" style="width:100%">
-					</div>
-				</div>
-			</div>
-
-			<div id="ClothSimulation" class="tabcontent">
-				<h3>Tokyo</h3>
-				<p>Tokyo is the capital of Japan.</p>
-			</div>
-
-			<div id="IOSApp" class="tabcontent">
-				<div class="grid-container">
-					<div class="item1">
-						<img src="images/project/DCCA.mp4" style="width:60%">
-					</div>
-					<div>
-						<p class="centerText"> This cloud-based IOS app was created in 24 hours during the 2018 Duhram Hackathon. It is a posting app for local services which comes with login security, posting creation and viewing and live messaging. Focuses on easy and quick use with both the youth and the eldrly as a target audience.</p>
-					</div>
-					<div>
-						<img class="center" src="images/project/DCCB.png" style="width:80%">
-					</div>
-				</div>
-			</div>
-
 			</div>
 
 		</div>
